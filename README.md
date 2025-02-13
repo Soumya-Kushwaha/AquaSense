@@ -1,65 +1,132 @@
-## AquaSense 💧🌊
+# AquaSense 🌊
 
-AquaSense is a machine learning project to predict the potability of water based on its various physical and chemical properties. The project uses a variety of machine learning algorithms, including logistic regression, decision trees, random forests, XGBoost, K-nearest neighbors, support vector machines, and AdaBoost.
+A comprehensive data analysis and machine learning project to predict water potability using various water quality metrics.
 
-### Installation and Setup 🛠️
+## 📊 Project Overview
 
-To install and set up AquaSense, you will need to have Python 3 and the following Python libraries installed:
+AquaSense analyzes water quality data to determine potability using multiple machine learning models. The project includes extensive data visualization, preprocessing, and comparative analysis of different classification algorithms.
 
-* pandas 🐼
-* numpy 🐍
-* matplotlib 📊
-* seaborn 🎨
-* plotly 📈
-* scikit-learn 🤖
-* xgboost 🚀
-* imbalanced-learn ⚖️
+## 🔬 Features
 
-Once you have installed the required libraries, you can clone the AquaSense repository and install the project using the following command:
+- Comprehensive exploratory data analysis (EDA)
+- Interactive visualizations using Plotly and Seaborn
+- Missing data handling and preprocessing
+- Implementation of 7 different machine learning models:
+  - Logistic Regression
+  - Decision Tree Classifier
+  - Random Forest Classifier
+  - XGBoost Classifier
+  - K-Nearest Neighbors
+  - Support Vector Machine
+  - AdaBoost Classifier
+- Model performance comparison and evaluation
 
+## 📈 Dataset
+
+The project uses a water potability dataset with the following features:
+- pH value
+- Hardness
+- Solids
+- Chloramines
+- Sulfate
+- Conductivity
+- Organic carbon
+- Trihalomethanes
+- Turbidity
+- Potability (target variable)
+
+## 🛠️ Technical Stack
+
+- **Python**: Core programming language
+- **Data Processing**: Pandas, NumPy
+- **Visualization**: 
+  - Matplotlib
+  - Seaborn
+  - Plotly Express
+- **Machine Learning**: 
+  - Scikit-learn
+  - XGBoost
+- **Development Environment**: Jupyter Notebook
+
+## 📊 Visualizations Include
+
+- Correlation heatmaps
+- Distribution plots
+- Box plots
+- Violin plots
+- Pair plots
+- Interactive Plotly visualizations
+- Missing data analysis
+
+## 🤖 Machine Learning Models Performance
+
+| Model | Accuracy Score |
+|-------|---------------|
+| Logistic Regression | ✓ |
+| Decision Tree | ✓ |
+| Random Forest | ✓ |
+| XGBoost | ✓ |
+| K-Nearest Neighbors | ✓ |
+| SVM | ✓ |
+| AdaBoost | ✓ |
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/aquasense.git
+cd aquasense
 ```
+
+2. Install required packages:
+```bash
 pip install -r requirements.txt
 ```
 
-### Usage 💻📊
-
-To use AquaSense, you will need to provide a CSV file containing the water quality data. The CSV file should have the following columns:
-
-* **Potability:** A binary variable indicating whether the water is potable or not.
-* **pH:** The pH of the water.
-* **Hardness:** The hardness of the water in milligrams per liter (mg/L).
-* **Solids:** The total dissolved solids (TDS) of the water in mg/L.
-* **Chloramines:** The concentration of chloramines in the water in mg/L.
-* **Sulfate:** The concentration of sulfate in the water in mg/L.
-* **Conductivity:** The conductivity of the water in microsiemens per centimeter (μS/cm).
-* **Organic_carbon:** The concentration of organic carbon in the water in mg/L.
-* **Trihalomethanes:** The concentration of trihalomethanes in the water in micrograms per liter (μg/L).
-* **Turbidity:** The turbidity of the water in nephelometric turbidity units (NTU).
-
-Once you have prepared the CSV file, you can run the AquaSense script using the following command:
-
-```
-python aquasense.py --input_file <path_to_csv_file>
+3. Run Jupyter Notebook:
+```bash
+jupyter notebook
 ```
 
-The script will output a prediction for each water sample in the CSV file. The prediction will be a binary value indicating whether the water is potable or not.
+4. Open `AquaSense.ipynb` to view the analysis
 
-### Evaluation 🏆
+## 📋 Prerequisites
 
-The AquaSense project was evaluated using a 70/30 train/test split. The following accuracy scores were obtained on the test set:
+- Python 3.x
+- Jupyter Notebook
+- Required Python packages:
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - plotly
+  - scikit-learn
+  - xgboost
 
-* Logistic regression: 92%
-* Decision tree: 93%
-* Random forest: 94%
-* XGBoost: 95%
-* K-nearest neighbors: 91%
-* Support vector machine: 92%
-* AdaBoost: 93%
+## 🔍 Key Findings
 
-### Contributing 🤝
+- Comprehensive analysis of water quality parameters
+- Identification of key factors affecting water potability
+- Comparative analysis of different machine learning approaches
+- Model performance evaluation using various metrics
 
-To contribute to the AquaSense project, please fork the repository and create a new branch for your changes. Once you have made your changes, please submit a pull request to the main branch of the repository.
+## 👥 Contributing
 
-### License 📄
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-AquaSense is licensed under the MIT License.
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Original dataset contributors
+- Soumya Kushwaha - Project Author
+- [GitHub Repository](https://github.com/Soumya-Kushwaha)
+
+## 📧 Contact
+
+For any queries or suggestions, please reach out through GitHub issues.
+
+---
+Developed with ❤️ by [Soumya Kushwaha](https://github.com/Soumya-Kushwaha)
